@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+   
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27017:27017
+
+
+  node:
+    container_name: nodeapp
+    restart: always
+    build: .
+    ports:
+      - 3000:3000
+    depends_on: 
+      - mongo
+    environment:
+      - DB_HOST=mongodb://mongo:27017/posts  
+
+
+# docker-compose up -d

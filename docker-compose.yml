@@ -1,0 +1,29 @@
+version: "2"
+services: 
+  mongo:
+    image: mongo:3.2.20
+    container_name: mongo
+ #   restart: always
+    #volumes:
+     # - C:\Users\Ayan\Micro-services-docker-node-app-with-mongodb\app\mongod.conf:/etc/mongod.conf
+     # - ./logs:/var/log/mongod/
+     # - ./db:/var/lib/mongodb
+      #- ./mongod.service:/lib/systemd/system/mongod.service
+    ports:
+      - "27017:27017"
+
+  app:
+    container_name: app
+    restart: always
+    build: ./app
+    ports:
+      - "80:3000"
+    links:
+      - mongo
+    environment: 
+      - DB_HOST=mongodb://mongo:27017/posts
+    #command: node app/seeds/seed.js
+    # Install kompose using chocolatey
+# choco install kubernetes-kompose
+# Go to the same directory as your docker-compose file
+# kompose convert
