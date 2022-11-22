@@ -16,7 +16,12 @@
 
 ## Virtualisation vs Containerisation 
 
-explain 
+Key point: VM is isolation of machines, while Containers is isolation of processes
+
+-  The level at which virtualization happens - virtualization happens at hardware level vs. OS level
+-  The type of isolation achieved - isolation of machines vs. isolation of processes
+-  How resources are accessed - via hypervisor vs. via kernel features such as namespace and cgroups
+-  Flexibility of hardware vs. portability
 
 
 ### Installing Docker 
