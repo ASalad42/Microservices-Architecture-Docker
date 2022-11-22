@@ -2,13 +2,17 @@
 
 ## Containerisation & Docker
 
-explain 
+- Docker is an open source containerization platform. It enables developers to package applications into containers
+- Docker lets you build, test, and deploy applications quickly. 
+- Build and scale distributed application architectures by taking advantage of standardized code deployments using Docker containers.
+- Containers simplify delivery of distributed applications!
+
 
 
 ### Benefits
-- a
-- b
-- c
+- Flexible resource sharing
+- Ease of moving and maintaining my application
+
 
 ## Virtualisation vs Containerisation 
 
