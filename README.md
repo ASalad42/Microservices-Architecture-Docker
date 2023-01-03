@@ -221,7 +221,7 @@ services:
 ![image](https://user-images.githubusercontent.com/104793540/190136738-e38b48ff-3838-4d9c-85f9-0fd1a49d1603.png)
 
 
-other commands:
+extras:
 
 - `docker stop CONTAINER_ID` - Stops your running container.
 - `docker exec -it CONTAINER_ID sh` like ssh into a vm/ec2
